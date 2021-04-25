@@ -1,0 +1,24 @@
+<div class="w-100">
+  <h1 mat-heading>Primary Calculator!</h1>
+  <hr class="mt-2 bg-dark" />
+  <mat-form-field appearance="outline" [style.width.%]="100">
+    <mat-label>Input a Number</mat-label>
+    <input #nPrime matInput />
+  </mat-form-field>
+  <div>
+    <button
+      [style.width.%]="100"
+      mat-raised-button
+      color="primary"
+      (click)="getN()"
+      fullwidth
+    >
+      Get Result
+    </button>
+  </div>
+  <div class="primes">
+    <h2 mat-title>
+      {{ answer }}
+    </h2>
+  </div>
+</div>
