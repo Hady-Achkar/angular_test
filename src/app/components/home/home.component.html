@@ -1,48 +1,50 @@
-<div class="container pt-5">
-  <div class="row">
-    <div class="col-6">
-      <h1 class="mat-headline">About me</h1>
-      <hr class="mt-2 bg-dark" />
-      <h3 class="mat-subheading-2">
-        Seeking a job position in Telecommunication engineer department. (at
-        ecomz)
-      </h3>
+<div class="container-fluid bg-light">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-6">
+        <h1 class="mat-headline">About me</h1>
+        <hr class="mt-2 bg-dark" />
+        <h3 class="mat-subheading-2">
+          Seeking a job position in Telecommunication engineer department. (at
+          ecomz)
+        </h3>
 
-      <h1 class="mat-headline">Education</h1>
-      <hr class="mt-2 bg-dark" />
-      <h3 class="mat-subheading-2">
-        BS Degree of Computer and Communication Engineer
-      </h3>
-      <h3 class="mat-subheading-2">
-        Lebanese Baccalaureate in Sociology and Economics
-      </h3>
-      <h1 class="mat-headline">Work Experience</h1>
-      <hr class="mt-2 bg-dark" />
-      <mat-list>
-        <mat-list-item
-          *ngFor="let item of experience"
-          style="padding: 0; margin: 0"
-        >
-          <img matListAvatar src="{{ item.avatar }}" alt="{{ item.from }}" />
-          <h3 matLine>{{ item.from }}</h3>
-          <p matLine>
-            <span> {{ item.subject }} </span>
-          </p>
-        </mat-list-item>
-      </mat-list>
-      <hr class="mt-2 bg-dark" />
-      <mat-list>
-        <mat-list-item
-          *ngFor="let item of skills"
-          style="padding: 0; margin: 0"
-        >
-          <h3 matLine>{{ item.text }}</h3>
-        </mat-list-item>
-      </mat-list>
-      <hr class="mt-2 bg-dark" />
-    </div>
-    <div class="col-6">
-      <prime></prime>
+        <h1 class="mat-headline">Education</h1>
+        <hr class="mt-2 bg-dark" />
+        <h3 class="mat-subheading-2">
+          BS Degree of Computer and Communication Engineer
+        </h3>
+        <h3 class="mat-subheading-2">
+          Lebanese Baccalaureate in Sociology and Economics
+        </h3>
+        <h1 class="mat-headline">Work Experience</h1>
+        <hr class="mt-2 bg-dark" />
+        <mat-list>
+          <mat-list-item
+            *ngFor="let item of experience"
+            style="padding: 0; margin: 0"
+          >
+            <img matListAvatar src="{{ item.avatar }}" alt="{{ item.from }}" />
+            <h3 matLine>{{ item.from }}</h3>
+            <p matLine>
+              <span> {{ item.subject }} </span>
+            </p>
+          </mat-list-item>
+        </mat-list>
+        <hr class="mt-2 bg-dark" />
+        <mat-list>
+          <mat-list-item
+            *ngFor="let item of skills"
+            style="padding: 0; margin: 0"
+          >
+            <h3 matLine>{{ item.text }}</h3>
+          </mat-list-item>
+        </mat-list>
+        <hr class="mt-2 bg-dark" />
+      </div>
+      <div class="col-6">
+        <prime></prime>
+      </div>
     </div>
   </div>
 </div>

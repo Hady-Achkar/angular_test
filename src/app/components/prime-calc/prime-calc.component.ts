@@ -15,7 +15,6 @@ export class PrimeCalcComponent {
   nTmp: number;
   answer: number;
   isPrime: boolean;
-  dynamicPadding: number = 400;
 
   getN() {
     this.primeNumbers = [];
@@ -33,9 +32,6 @@ export class PrimeCalcComponent {
       if (this.isPrime) {
         this.primeNumbers.push(i);
       }
-    }
-    if (this.primeNumbers.length > 3) {
-      this.dynamicPadding = 20;
     }
     this.answer = this.primeNumbers.reduce((prev, next) => prev + next, 0);
     console.log(this.answer);
